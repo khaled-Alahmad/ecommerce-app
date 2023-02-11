@@ -35,9 +35,8 @@ class ProductController extends Controller
     }
 
 
-    public function store(ProductRequest $request)
+    public function store(Request $request)
     {
-//       dd($request->image);
         if (isset($request['image'])) {
             $request['image'] = UploadImage::uploadImage($request['image'], 100, 100, 'imagesProduct/');
         }

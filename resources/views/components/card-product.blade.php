@@ -8,7 +8,7 @@
     <div class="product-body">
         <p class="product-category">{{$product->category->name}}</p>
         <h3 class="product-name"><a href="#">{{$product->name}}</a></h3>
-        <h4 class="product-price">{{$product->price}}
+        <h4 class="product-price">${{$product->price}}
 {{--            <del class="product-old-price">$990.00</del>--}}
         </h4>
         <div class="product-rating">
